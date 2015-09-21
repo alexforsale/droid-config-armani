@@ -1,0 +1,21 @@
+# Feel free to disable non-critical HA parts during devel by commenting out
+# Generated in hadk by executing: cd $ANDROID_ROOT; rpm/helpers/add_new_device.sh
+
+Description: Pattern with packages for armani configurations
+Name: jolla-configuration-armani
+Requires:
+- pattern:jolla-hw-adaptation-armani
+- pattern:jolla-configuration-sfe
+  # Lets preinstall some bloat, because we like it that way
+- sailfish-office
+- jolla-calculator
+- jolla-email
+- jolla-notes
+- jolla-clock
+- jolla-mediaplayer
+- jolla-calendar
+- sailfish-weather
+  # Needed for modem settings
+- jolla-settings-layout
+Summary: Jolla Configuration armani
+
