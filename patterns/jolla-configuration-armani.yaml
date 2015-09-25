@@ -9,6 +9,14 @@ Requires:
 - pattern:jolla-ui-wayland
 # Early stages of porting benefit from these:
 - pattern:sailfish-porter-tools
+- sailfish-office
+- jolla-calculator
+- jolla-email
+- jolla-notes
+- jolla-clock
+- jolla-mediaplayer
+- jolla-calendar
+- sailfish-weather
 
 Summary: Jolla Configuration armani
 
