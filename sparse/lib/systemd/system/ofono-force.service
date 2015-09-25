@@ -1,13 +1,12 @@
 [Unit]
-Description=Fix wifi
+Description=Force the modem online
 Requires=dbus.service
 After=dbus.service
 Before=ofono.service
 
 [Service]
-Type=oneshot
-RemainAfterExit=yes
-ExecStart=/bin/sh /usr/bin/droid/armani-wifi.sh
+Type=simple
+ExecStart=/bin/sh /usr/bin/droid/ofono-force.sh
 
 [Install]
 WantedBy=multi-user.target
